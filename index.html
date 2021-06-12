@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form - Okiemute Gold FCC Project</title>
+
+    <!-- Meta Description -->
+    <meta property="og:title" content="Survey Form coded by Okiemute Gold" />
+    <meta property="og:type" content="Survey Form" />
+    <meta property="og:description"
+        content="Survey Form coded by Okiemute Gold for Freecodecamp Responsive Web Design Certification Course" />
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="main">
+
+        <hr>
+        <footer>
+            <p>
+                <!-- Made by <a href="https://github.com/OkiemuteGold" target="_blank" rel="noopener noreferrer">OkiemuteGold</a> -->
+                &copy; <span id="footer-year"></span> <a href="https://github.com/OkiemuteGold" target="_blank">Okiemute
+                    Gold</a>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        let footerYear = document.getElementById("footer-year");
+        let fullCopyrightYear;
+        let date = new Date();
+        let currentYear = date.getFullYear();
+        currentYear > 2021 ? fullCopyrightYear = `2021 - ${currentYear}` : fullCopyrightYear = currentYear;
+        footerYear.innerHTML = fullCopyrightYear;
+    </script>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
