@@ -17,7 +17,98 @@
 </head>
 
 <body>
-    <div id="main">
+    <div id="wrapper">
+        <header>
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking out time to help us improve our platform</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Age <span class="text-lighter">(optional)</span></label>
+                <input type="number" name="age" id="number" class="form-control" min="10" max="99" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <p>Which option best describes your current role?</p>
+                <select name="current-role" id="dropdown" class="form-control" required>
+                    <option disabled>Select current status</option>
+                    <option value="student">Student</option>
+                    <option value="full-time-job">Full time</option>
+                    <option value="part-time-job">Part time</option>
+                    <option value="prefer-not-say">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>How likely are you to refer your friend?</p>
+                <label>
+                    <input type="radio" name="refer-choice" value="most-likely" class="radio-input">
+                    Most Likely
+                </label>
+                <label>
+                    <input type="radio" name="refer-choice" value="less-likely" class="radio-input">
+                    Less Likely
+                </label>
+                <label>
+                    <input type="radio" name="refer-choice" value="not-sure" class="radio-input">
+                    Not Sure
+                </label>
+            </div>
+            <div class="form-group">
+                <p>What is your favorite feature of freeCodeCamp?</p>
+                <select name="current-role" id="dropdown" class="form-control" required>
+                    <option disabled>Select favorite feature</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community/forum">Community/Forum</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>What area(s) would you like to see improved? <span class="text-lighter">(Select at least one)</span>
+                </p>
+                <label>
+                    <input type="checkbox" name="select-area" value="front-end-project" class="checkbox-input">
+                    Front-end Projects
+                </label>
+                <label>
+                    <input type="checkbox" name="select-area" value="back-end-project" class="checkbox-input">
+                    Back-end Projects
+                </label>
+                <label>
+                    <input type="checkbox" name="select-area" value="challenges" class="checkbox-input">
+                    Challenges
+                </label>
+                <label>
+                    <input type="checkbox" name="select-area" value="video-tutorials" class="checkbox-input">
+                    Video Tutorials
+                </label>
+                <label>
+                    <input type="checkbox" name="select-area" value="additional-courses" class="checkbox-input">
+                    Additional Courses
+                </label>
+                <label>
+                    <input type="checkbox" name="select-area" value="meetups" class="checkbox-input">
+                    Meetups
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Any other comment or suggestion?</p>
+                <textarea name="comment" id="comment" cols="30" rows="10" class="textarea-input"
+                    placeholder="Enter your comment or suggestion here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
 
         <hr>
         <footer>
