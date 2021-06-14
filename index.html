@@ -78,7 +78,7 @@
             <div class="tab">
                 <div class="form-group">
                     <p>What is your favorite feature of freeCodeCamp?</p>
-                    <select name="current-role" id="dropdown" class="form-control" required>
+                    <select name="favorite-feature" id="favorite-feature-dropdown" class="form-control" required>
                         <option value selected disabled>Select favorite feature</option>
                         <option value="challenges">Challenges</option>
                         <option value="projects">Projects</option>
@@ -156,6 +156,33 @@
         let currentYear = date.getFullYear();
         currentYear > 2021 ? fullCopyrightYear = `2021 - ${currentYear}` : fullCopyrightYear = currentYear;
         footerYear.innerHTML = fullCopyrightYear;
+
+        // var sel = document.getElementById("dropdown");
+        // var optVal = sel.value;
+        // console.log(optVal);
+
+        // var opt = sel.options[sel.selectedIndex].text;
+        // console.log(opt);
+
+        // function getSelectedOption(sel) {
+        //     var opt;
+        //     for (var i = 0, len = sel.options.length; i < len; i++) {
+        //         opt = sel.options[i];
+        //         if (opt.selected === true) {
+        //             break;
+        //         }
+        //     }
+        //     return opt;
+        // }
+
+        // // get selected option in sel (reference obtained above)
+        // var opt = getSelectedOption(sel);
+
+        // // display its value and text
+        // console.log(opt.value);
+        // console.log(opt.text);
+
+
 
         // var currentTab = 0; // Current tab is set to be the first tab (0)
         // showTab(currentTab); // Display the current tab
