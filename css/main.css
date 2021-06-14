@@ -60,14 +60,25 @@ header {
 }
 
 label {
-    text-shadow: 1px 1px 0px rgb(0 0 0 / 40%);
+    /* text-shadow: 1px 1px 0px rgb(0 0 0 / 40%); */
     display: flex;
     align-items: center;
     font-size: 17px;
     margin-bottom: 10px;
 }
 
-.form-group p {
+fieldset {
+    padding: 15px 20px 10px;
+    /* border-radius: 5px; */
+}
+
+legend {
+    padding: 0 3px;
+    background-color: #444;
+    font-size: 17px;
+}
+
+.form-group p:not(legend > p) {
     margin-bottom: 10px;
     font-size: 17px;
 }
@@ -112,10 +123,6 @@ select:focus,
 textarea {
     outline: none;
 }
-
-/* input:valid {
-    background-color: rgb(242, 131, 90);
-} */
 
 label > input {
     margin: 5px 0 5px 0;
@@ -197,6 +204,13 @@ footer a:hover {
 
     #survey-form {
         padding: 40px 30px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    legend {
+        font-size: 17px;
+        width: 100%;
     }
 }
 
